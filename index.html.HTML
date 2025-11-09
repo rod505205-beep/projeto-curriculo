@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gerador de Currículo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Tela inicial -->
+  <section id="home">
+    <h1>Gerador de Currículo</h1>
+    <button id="startBtn">Preencher Currículo</button>
+
+  </section>
+
+  <!-- Formulário -->
+  <section id="form" class="hidden">
+    <h2>Formulário</h2>
+
+    <label>Nome:</label>
+    <input id="nome" type="text">
+
+    <label>E-mail:</label>
+    <input id="email" type="email">
+
+    <label>Telefone:</label>
+    <label for="telefone">Telefone:</label>
+    <input id="telefone" type="telefone" placeholder="(99) 99999-9999" />
+
+    <label>Data de Nascimento:</label>
+    <input id="nascimento" type="date">
+    <p id="idade"></p>
+
+    <h3>Experiências Profissionais</h3>
+    <div id="experiencias">
+      <div class="exp-item">
+        <input class="cargo" placeholder="Cargo">
+        <input class="empresa" placeholder="Empresa">
+        <input class="periodo" placeholder="Período (ex: 2020 - 2023)">
+              </div>
+    </div>
+
+    <button id="addExp">+ Adicionar Experiência</button>
+    <button id="verBtn">Visualizar Currículo</button>
+  </section>
+
+  <!-- Visualização -->
+  <section id="visualizar" class="hidden">
+    <h2 id="tituloNome"></h2>
+    <div id="output"></div>
+
+    <button id="voltarBtn">Voltar</button>
+    <button id="printBtn">Imprimir Currículo</button>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
